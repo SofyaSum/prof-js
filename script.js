@@ -43,14 +43,14 @@ class ProductsList{
           })
     }
 
-    getSum() {
-      // let sum = 0;
-      // for (let product of this.goods){
-      //   sum += product.price;
-      // }
-      // alert(`${sum} $`);
-      return this.allProducts.reduce((accum, item) => accum += item.price, 0);
-    }
+    // getSum() {
+    //    let sum = 0;
+    //    for (let product of this.goods){
+    //      sum += product.price;
+    //    }
+    //    console.log(`${sum} $`);
+    //   // return this.allProducts.reduce((accum, item) => accum += item.price, 0);
+    // }
     
     render() {
         const block = document.querySelector(this.container);
@@ -95,21 +95,62 @@ class ProductItem{
 }
 
 class Cart{
+  constructor(container = '.login-drop'){
+    this.container = container;
+    this.goods = [];
+    this._getProducts()
+        .then(data => {
+             this.goods = [...data.contents];
+             this.render()
+        })
+  } 
 
-  addGoods(){}
+  _getProducts(){
+    return fetch(`${API}/getBasket.json`)
+          .then(result => result.json())
+          .catch(error => {
+            console.log(error);
+          })
+  }
 
-  removeGoods(){}
-
-  render(){}
+  render(){
+    const block = document.querySelector(this.container);
+        for(let product of this.goods){
+            const productObj = new ProductCart(product);
+            block.insertAdjacentHTML('afterbegin',productObj.render())
+        }
+  }
 }
 
 class ProductCart {
+  constructor(product){
+		this.title = product.title;
+		this.price = product.price;
+		this.id = product.id;
+		this.img = product.img;
+		this.quantity = product.quantity;
+	}
 
-  render (){}
+  render (){
+    return  `<div class="login-drop-box">
+              <img src="img/${this.img}" alt="${this.title}">
+              <div class="login-drop-text">
+                <h3>${this.title}</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>${this.quantity}  x   $${this.price}</p>
+              </div>
+              <button class="delete"><i class="fas fa-times-circle"></i></button>
+            </div>`
+  }
 }
 
 let list = new ProductsList();
 list.render();
-list.getSum();
-
-
+let basket = new Cart();
+basket.render();
