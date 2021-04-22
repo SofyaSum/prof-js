@@ -1,12 +1,42 @@
 [
   {
-    "id_product": 123,
-    "product_name": "Ноутбук",
-    "price": 45600
+    "id_product": 1,
+    "product_name": "mango people t-shirt",
+    "price": 42
   },
   {
-    "id_product": 456,
-    "product_name": "Мышка",
-    "price": 1000
+    "id_product": 2,
+    "product_name": "mango people blouse",
+    "price": 52
+  }
+  {
+    "id_product": 3,
+    "product_name": "mango people jacket",
+    "price": 45
+  },
+  {
+    "id_product": 4,
+    "product_name": "mango people blouse",
+    "price": 32
+  }
+  {
+    "id_product": 5,
+    "product_name": "mango people blouse",
+    "price": 49
+  },
+  {
+    "id_product": 6,
+    "product_name": "mango people blazer",
+    "price": 60
+  }
+  {
+    "id_product": 7,
+    "product_name": "mango people pants",
+    "price": 12
+  },
+  {
+    "id_product": 8,
+    "product_name": "mango people hoodie",
+    "price": 80
   }
 ]
