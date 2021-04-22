@@ -1,49 +1,49 @@
 [
   {
-    "id_product": 1,
-    "product_name": "mango people t-shirt",
+    "id": 1,
+    "title": "mango people t-shirt",
     "price": 42,
     "img": "item-1.png"
   },
   {
-    "id_product": 2,
-    "product_name": "mango people blouse",
+    "id": 2,
+    "title": "mango people blouse",
     "price": 52,
     "img": "item-2.png"
   },
   {
-    "id_product": 3,
-    "product_name": "mango people jacket",
+    "id": 3,
+    "title": "mango people jacket",
     "price": 45,
     "img": "item-3.png"
   },
   {
-    "id_product": 4,
-    "product_name": "mango people blouse",
+    "id": 4,
+    "title": "mango people blouse",
     "price": 32,
     "img": "item-4.png"
   },
   {
-    "id_product": 5,
-    "product_name": "mango people blouse",
+    "id": 5,
+    "title": "mango people blouse",
     "price": 49,
     "img": "item-5.png"
   },
   {
-    "id_product": 6,
-    "product_name": "mango people blazer",
+    "id": 6,
+    "title": "mango people blazer",
     "price": 60,
     "img": "item-6.png"
   },
   {
-    "id_product": 7,
-    "product_name": "mango people pants",
+    "id": 7,
+    "title": "mango people pants",
     "price": 12,
     "img": "item-7.png"
   },
   {
-    "id_product": 8,
-    "product_name": "mango people hoodie",
+    "id": 8,
+    "title": "mango people hoodie",
     "price": 80,
     "img": "item-8.png"
   }
