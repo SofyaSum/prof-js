@@ -113,6 +113,26 @@ class Cart{
           })
   }
 
+  // addProduct(product){
+  //   const productObj = new ProductCart(product);
+  //   console.log(productObj);
+  //   if (basket.goods.find(product) == undefined){
+  //     basket.goods.push(productObj);
+  //   } else {
+  //     this.quantity++;
+  //   } 
+  //     console.log(basket.goods);
+  // }
+
+  //   removeProduct(product){
+  //   let product = basket.goods.find(product);
+  //   product.quantity--;
+  //   if (product.quantity == 0){
+  //     basket.goods.splice(basket.goods.findIndex(product), 1);
+  //   }
+  // }
+
+
   render(){
     const block = document.querySelector(this.container);
         for(let product of this.goods){
