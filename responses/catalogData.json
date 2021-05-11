@@ -1,1 +1,56 @@
-
+[
+  {
+    "id": 1,
+    "title": "mango people coat",
+    "price": 68,
+    "img": "img/prod_1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "mango people coat",
+    "price": 83,
+    "img": "img/prod_2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "mango people jacket",
+    "price": 45,
+    "img": "img/prod_3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "mango people t-shirt",
+    "price": 32,
+    "img": "img/prod_4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "mango people hoodie",
+    "price": 49,
+    "img": "img/prod_5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "mango people jacket",
+    "price": 60,
+    "img": "img/prod_6.jpg"
+  },
+  {
+    "id": 7,
+    "title": "mango people jacket",
+    "price": 12,
+    "img": "img/prod_7.jpg"
+  },
+  {
+    "id": 8,
+    "title": "mango people coat",
+    "price": 85,
+    "img": "img/prod_8.jpg"
+  },
+  {
+    "id": 9,
+    "title": "mango people t-shirt",
+    "price": 80,
+    "img": "img/prod_9.jpg"
+  }
+]
