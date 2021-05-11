@@ -75,6 +75,12 @@ body {
   position: relative;
 }
 
+.browse:hover .browse-drop {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  z-index: 1;
+}
+
 .browse-btn {
   padding: 8px 15px;
   height: 40px;
@@ -224,12 +230,6 @@ body {
   color: #f16d7f;
 }
 
-.login:hover .login-drop {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  z-index: 1;
-}
-
 .login-drop {
   position: absolute;
   width: 262px;
@@ -252,6 +252,12 @@ body {
   transition: 0.5s;
 }
 
+.login:hover .login-drop {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  z-index: 1;
+}
+
 .login-drop-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,10 +270,6 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #eaeaea;
   padding: 15px 0;
-}
-
-.login-drop-box img {
-  height: 85px;
 }
 
 .login-drop-text {
@@ -300,6 +302,9 @@ body {
   text-transform: uppercase;
   color: #f16d7f;
 }
+.login-drop img {
+  height: 85px;
+}
 
 .drop-box {
   display: -webkit-box;
@@ -312,12 +317,17 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.drop-box p {
+.drop-box p,
+.empty-cart {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
+}
+.empty-cart {
+  display: block;
+  margin: 15px auto;
 }
 
 .account {
@@ -938,12 +948,13 @@ input[type="checkbox"] {
   align-items: center;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 .hover-btn img {
   margin-right: 10px;
 }
 .hover-btn:hover {
-  background-color: #222;
+  background-color: #f16d7f;
 }
 
 .product-link {
@@ -1360,7 +1371,6 @@ input[type="checkbox"] {
 }
 
 .footer {
-  margin-top: 100px;
   height: 79px;
   background-color: #e6e6e6;
   display: -webkit-box;
@@ -1421,6 +1431,7 @@ input[type="checkbox"] {
   height: 15px;
   width: auto;
   font-size: 16px;
+  line-height: 42px;
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #b2b2b2;
@@ -1587,6 +1598,10 @@ input[type="checkbox"] {
 .add-btn:hover {
   background: #f16d7f;
   color: #fff;
+}
+
+.cart {
+  margin: 70px auto;
 }
 
 .shopping-titles h3 {
@@ -1966,4 +1981,3 @@ td:first-child {
 }
 
 /*# sourceMappingURL=style.css.map */
-
