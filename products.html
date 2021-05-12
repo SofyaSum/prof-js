@@ -462,7 +462,8 @@
           </div>
     
           <div class="product">
-            <catalog></catalog>
+            <error-block :error="error" v-if="error"></error-block>
+            <catalog ref="products"></catalog>
           </div>
     
           <div class="pagination-contain">
@@ -627,6 +628,7 @@
   <script src="js/catalogComp.js"></script>
   <script src="js/ProducComp.js"></script>
   <script src="js/SearchComp.js"></script>
+  <script src="js/ErrorComponent.js"></script>
   <script src="js/main.js"></script>
 
 

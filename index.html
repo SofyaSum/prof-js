@@ -398,7 +398,8 @@
           <h2 class="product-title">Fetured Items</h2> <br>
           <p class="product-subtitle">Shop for items based on what we featured in this week</p>
         </div>
-    
+        
+        <error-block :error="error" v-if="error"></error-block>
         <products></products>
     
         <div class="product-btn-box">
@@ -561,6 +562,7 @@
   <script src="js/CartComp.js"></script>
   <script src="js/ProducComp.js"></script>
   <script src="js/SearchComp.js"></script>
+  <script src="js/ErrorComponent.js"></script>
   <script src="js/main.js"></script>
 
   </body>

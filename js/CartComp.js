@@ -6,14 +6,6 @@ Vue.component('cart', {
           total: 0
       }
     },
-    computed: {
-        getSum(){
-            for(let el of cartItems){
-                total += this.el.quantity*this.el.price;
-            }
-            return total;
-        }
-    },
     methods: {
         addProduct(product){
             this.$parent.getJson(`${API}/addToBasket.json`)
@@ -45,12 +37,12 @@ Vue.component('cart', {
         },
     },
     mounted(){
-         this.$parent.getJson(`${API + this.cartUrl}`)
-             .then(data => {
-                 for(let el of data.contents){
-                     this.cartItems.push(el);
-                 }
-             });
+        //  this.$parent.getJson(`${API + this.cartUrl}`)
+        //      .then(data => {
+        //          for(let el of data.contents){
+        //              this.cartItems.push(el);
+        //          }
+        //      });
     },
     template: `
           <div class="login-drop">

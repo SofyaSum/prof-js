@@ -886,13 +886,12 @@ input[type="checkbox"] {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   margin-bottom: 70px;
 }
 
 .product-box {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  width: 30%;
+  margin: 15px 14px;
   padding-bottom: 5px;
   position: relative;
   -webkit-transition: 1s;
