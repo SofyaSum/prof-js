@@ -1,0 +1,27 @@
+{
+    "amount": 94,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id": 4,
+            "title": "mango people blouse",
+            "price": 32,
+            "img": "img/item-4.png"
+        },
+        {
+            "quantity": 1,
+            "id": 6,
+            "title": "mango people blazer",
+            "price": 60,
+            "img": "img/item-6.png"
+        },
+        {
+            "quantity": 1,
+            "id": 5,
+            "title": "mango people blouse",
+            "price": 49,
+            "img": "img/item-5.png"
+        }
+    ]
+}
